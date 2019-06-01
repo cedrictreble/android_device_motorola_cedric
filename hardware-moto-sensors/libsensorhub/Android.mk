@@ -42,7 +42,7 @@ LOCAL_CFLAGS += -Wall -Wextra
 LOCAL_CFLAGS += -Wno-gnu-designator -Wno-writable-strings
 LOCAL_CXXFLAGS += -Weffc++ -std=c++14
 
-LOCAL_PROPRIETARY_MODULE := true
+LOCAL_VENDOR_MODULE := true
 
 include $(BUILD_SHARED_LIBRARY)
 
