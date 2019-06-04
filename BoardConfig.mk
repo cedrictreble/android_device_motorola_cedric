@@ -109,7 +109,7 @@ TARGET_PROVIDES_KEYMASTER := true
 # Encryption support
 TARGET_HW_DISK_ENCRYPTION   := true
 TW_INCLUDE_CRYPTO           := true
-TARGET_CRYPTFS_HW_PATH      := vendor/qcom/opensource/cryptfs_hw
+TARGET_CRYPTFS_HW_PATH      := $(DEVICE_PATH)/cryptfs_hw
 
 # Brightness
 TW_BRIGHTNESS_PATH                  := /sys/class/leds/lcd-backlight/brightness
