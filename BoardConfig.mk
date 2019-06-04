@@ -14,11 +14,9 @@
 # limitations under the License.
 #
 
-DEVICE_COMMON_PATH := device/motorola/msm8937-common
+DEVICE_PATH := device/motorola/cedric
 
-TARGET_RECOVERY_DEVICE_DIRS := \
-    $(DEVICE_COMMON_PATH) \
-    $(DEVICE_PATH)
+TARGET_RECOVERY_DEVICE_DIRS := $(DEVICE_PATH)
 
 # Architecture
 TARGET_ARCH             := arm64
@@ -64,6 +62,7 @@ BOARD_KERNEL_PAGESIZE       := 2048
 KERNEL_TOOLCHAIN            := $(PWD)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin
 KERNEL_TOOLCHAIN_PREFIX     := aarch64-linux-android-
 TARGET_KERNEL_SOURCE        := kernel/motorola/msm8937
+TARGET_KERNEL_CONFIG        := cedric_defconfig
 BOARD_KERNEL_SEPARATED_DT   := true
 TARGET_CUSTOM_DTBTOOL       := dtbTool_custom
 BOARD_MKBOOTIMG_ARGS        := --ramdisk_offset 0x01000000 --tags_offset 0x00000100
@@ -85,6 +84,15 @@ TARGET_USERIMAGES_USE_F2FS  := true
 TARGET_RECOVERY_FSTAB       := $(DEVICE_PATH)/recovery/root/etc/twrp.fstab
 TW_INCLUDE_FUSE_EXFAT       := true # exFAT support
 TW_INCLUDE_FUSE_NTFS        := true # NTFS support
+
+# Partitions
+BOARD_FLASH_BLOCK_SIZE              := 131072
+BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE   := ext4
+BOARD_BOOTIMAGE_PARTITION_SIZE      := 16777216    # mmcblk0p37
+BOARD_CACHEIMAGE_PARTITION_SIZE     := 268435456   # mmcblk0p52
+BOARD_RECOVERYIMAGE_PARTITION_SIZE  := 16879616    # mmcblk0p38
+BOARD_SYSTEMIMAGE_PARTITION_SIZE    := 3623878656  # mmcblk0p53
+BOARD_USERDATAIMAGE_PARTITION_SIZE  := 10768858624 # mmcblk0p54
 
 # Lun
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/class/android_usb/android0/f_mass_storage/lun/file
