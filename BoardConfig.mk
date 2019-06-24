@@ -235,6 +235,11 @@ MOT_SENSOR_HUB_FEATURE_GR := true
 
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# Soong
+PRODUCT_SOONG_NAMESPACES += \
+    $(DEVICE_PATH)/libhidl \
+    $(DEVICE_PATH)/libshims
+
 # Thermal
 USE_DEVICE_SPECIFIC_THERMAL := true
 
