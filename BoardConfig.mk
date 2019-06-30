@@ -144,6 +144,7 @@ TW_NEW_ION_HEAP                     := true
 TW_EXTRA_LANGUAGES                  := true
 
 # Misc TWRP
+TW_USE_TOOLBOX                      := true
 BOARD_SUPPRESS_SECURE_ERASE         := true # don't take forever to wipe
 BOARD_HAS_NO_SELECT_BUTTON          := true
 TW_INCLUDE_FB2PNG                   := true
