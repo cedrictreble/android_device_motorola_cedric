@@ -1,8 +1,14 @@
 [
   {
     "remote": "github",
-    "repository": "LineageOS/android_device_qcom_common",
-    "target_path": "device/qcom/common",
+    "repository": "montanadevelopment/android_kernel_motorola_msm8937",
+    "target_path": "kernel/motorola/msm8937",
+    "revision": "twrp-9.0"
+  },
+  {
+    "remote": "github",
+    "repository": "LineageOS/android_vendor_qcom_opensource_cryptfs_hw",
+    "target_path": "vendor/qcom/opensource/cryptfs_hw",
     "revision": "cm-14.1"
   }
 ]
