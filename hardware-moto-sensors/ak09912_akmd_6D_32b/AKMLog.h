@@ -24,7 +24,7 @@
 #ifndef AKMD_INC_AKMLOG_H
 #define AKMD_INC_AKMLOG_H
 
-#include <log/log.h>
+#include <cutils/log.h>
 
 /*** Constant definition ******************************************************/
 #undef LOG_TAG

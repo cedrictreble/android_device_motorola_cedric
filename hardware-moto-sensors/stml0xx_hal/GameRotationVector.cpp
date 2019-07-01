@@ -21,7 +21,7 @@
 #include <float.h>
 #include <math.h>
 #include <string.h>
-#include <log/log.h>
+#include <cutils/log.h>
 #include "GameRotationVector.h"
 #include "GyroIntegration.h"
 #include "Quaternion.h"

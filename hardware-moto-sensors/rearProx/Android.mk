@@ -24,8 +24,8 @@ LOCAL_MODULE := sensors.rp
 
 LOCAL_MODULE_TAGS := optional
 
-LOCAL_VENDOR_MODULE := true
-LOCAL_HEADER_LIBRARIES := libhardware_headers
+LOCAL_PROPRIETARY_MODULE := true
+
 LOCAL_CLANG := true
 
 LOCAL_SRC_FILES :=	\
@@ -41,7 +41,8 @@ LOCAL_SHARED_LIBRARIES += \
     libutils \
     libcutils \
     liblog \
-    libdl
+    libdl \
+    libhardware
 
 
 include $(BUILD_SHARED_LIBRARY)

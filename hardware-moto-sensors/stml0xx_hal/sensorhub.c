@@ -17,7 +17,7 @@
 
 #define LOG_TAG "sensorhub"
 
-#include <log/log.h>
+#include <cutils/log.h>
 
 #include <dirent.h>
 #include <endian.h>

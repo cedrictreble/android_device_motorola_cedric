@@ -35,7 +35,7 @@
 #include <linux/input.h>
 
 #include <cutils/atomic.h>
-#include <log/log.h>
+#include <cutils/log.h>
 
 
 #include "Sensors.h"

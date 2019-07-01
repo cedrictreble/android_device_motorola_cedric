@@ -1,4 +1,4 @@
-#include <log/log.h>
+#include <cutils/log.h>
 
 // Sensor log macros that include the function name and line number
 #define S_LOGE(format, x...) ALOGE("%s:%d " format, __func__, __LINE__, ##x)

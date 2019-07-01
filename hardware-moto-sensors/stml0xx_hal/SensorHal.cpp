@@ -21,7 +21,7 @@
 #include <float.h>
 #include <string.h>
 
-#include <log/log.h>
+#include <cutils/log.h>
 
 #include <hardware/sensors.h>
 #include "mot_sensorhub_stml0xx.h"

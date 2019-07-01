@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
+#include <stdio.h>
 #include <fcntl.h>
 #include <errno.h>
 #include <math.h>
@@ -21,10 +21,9 @@
 #include <unistd.h>
 #include <dirent.h>
 #include <sys/select.h>
-#include <stdio.h>
 #include <string.h>
 
-#include <log/log.h>
+#include <cutils/log.h>
 #include <android-base/macros.h>
 
 #include "RearProxSensor.h"

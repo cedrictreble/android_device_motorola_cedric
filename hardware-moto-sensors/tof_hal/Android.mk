@@ -46,16 +46,15 @@ LOCAL_ADDITIONAL_DEPENDENCIES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
 
 # Needs to be added after KERNEL_OBJ/usr/include
 LOCAL_C_INCLUDES += kernel/include
-
 LOCAL_HEADER_LIBRARIES := libutils_headers libhardware_headers
-LOCAL_SHARED_LIBRARIES += liblog libcutils libutils libc libbase
+LOCAL_SHARED_LIBRARIES += liblog libcutils libutils libc libbase libhardware
 LOCAL_CFLAGS += -Wall -Wextra
 LOCAL_CFLAGS += -Wno-gnu-designator -Wno-writable-strings
 LOCAL_CXXFLAGS += -Weffc++ -std=c++14
 
 #LOCAL_PRELINK_MODULE := false
 
-LOCAL_VENDOR_MODULE := true
+LOCAL_PROPRIETARY_MODULE := true
 
 include $(BUILD_SHARED_LIBRARY)
 
