@@ -63,6 +63,10 @@ on late-fs
     # mount RW partitions which need run fsck
     mount_all /vendor/etc/fstab.qcom --late
 
+    # Hack for camera blobs
+    mount none /vendor/lib/vndk/libbinder.so /system/lib/vndk-28/libbinder.so bind
+    mount none /vendor/lib/vndk-sp/libcutils.so /system/lib/vndk-sp-28/libcutils.so bind
+
     # Keeping following partitions outside fstab file. As user may not have
     # these partition flashed on the device. Failure to mount any partition in fstab file
     # results in failure to launch late-start class.
