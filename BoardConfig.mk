@@ -194,7 +194,8 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 26401026048 # 25782252 * 1024 mmcblk0p54
 BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/dsp:/dsp \
     /vendor/firmware_mnt:/firmware \
-    /mnt/vendor/persist:/pds
+    /mnt/vendor/persist:/pds \
+    /vendor/fsg:/fsg
 
 # Peripheral manager
 TARGET_PER_MGR_ENABLED := true
