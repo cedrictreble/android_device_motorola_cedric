@@ -246,6 +246,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
         persist.vendor.radio.no_wait_for_card=1 \
         persist.vendor.radio.oem_ind_to_both=0 \
         persist.vendor.radio.relay_oprt_change=1 \
+        rild.libargs=-d /dev/smd0 \
         rild.libpath=/vendor/lib64/libril-qc-qmi-1.so \
         ro.mot.ignore_csim_appid=true \
         persist.sys.ssr.restart_level=ALL_ENABLE \
